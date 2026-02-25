@@ -1,0 +1,163 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Calculator container */
+.calculator {
+    background: #2d2d2d;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 360px;
+}
+
+/* Display area */
+.display {
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding: 25px 20px;
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 1px;
+}
+
+/* Button grid layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+}
+
+/* Base button styles */
+.btn {
+    background: #4a4a4a;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    box-shadow: 0 4px 0 #3a3a3a;
+}
+
+.btn:hover {
+    background: #5a5a5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #3a3a3a;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #3a3a3a;
+}
+
+/* Number buttons */
+.btn-number {
+    background: #505050;
+}
+
+.btn-number:hover {
+    background: #606060;
+}
+
+/* Operator buttons */
+.btn-operator {
+    background: #ff9500;
+    box-shadow: 0 4px 0 #cc7700;
+}
+
+.btn-operator:hover {
+    background: #ffaa33;
+    box-shadow: 0 6px 0 #cc7700;
+}
+
+.btn-operator:active {
+    box-shadow: 0 2px 0 #cc7700;
+}
+
+/* Clear button */
+.btn-clear {
+    background: #d4d4d2;
+    color: #1a1a1a;
+    font-weight: 600;
+    box-shadow: 0 4px 0 #a4a4a2;
+}
+
+.btn-clear:hover {
+    background: #e4e4e2;
+    box-shadow: 0 6px 0 #a4a4a2;
+}
+
+.btn-clear:active {
+    box-shadow: 0 2px 0 #a4a4a2;
+}
+
+/* Equals button - spans 2 rows */
+.btn-equals {
+    background: #34c759;
+    grid-row: span 2;
+    box-shadow: 0 4px 0 #28a745;
+}
+
+.btn-equals:hover {
+    background: #4dd76a;
+    box-shadow: 0 6px 0 #28a745;
+}
+
+.btn-equals:active {
+    box-shadow: 0 2px 0 #28a745;
+}
+
+/* Zero button - spans 2 columns */
+.btn-zero {
+    grid-column: span 2;
+}
+
+/* Add button - spans 2 rows */
+.btn-add {
+    grid-row: span 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .calculator {
+        max-width: 100%;
+        margin: 10px;
+    }
+    
+    .display {
+        font-size: 2rem;
+        padding: 20px 15px;
+        min-height: 70px;
+    }
+    
+    .btn {
+        font-size: 1.25rem;
+        padding: 20px;
+    }
+}
