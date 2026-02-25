@@ -1,0 +1,125 @@
+/* Calculator Layout and Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.calculator {
+    background: #2d3748;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 320px;
+}
+
+.display {
+    background: #1a202c;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.button {
+    background: #4a5568;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    outline: none;
+}
+
+.button:hover {
+    background: #5a6678;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button.digit {
+    background: #4a5568;
+}
+
+.button.operator {
+    background: #ed8936;
+}
+
+.button.operator:hover {
+    background: #f59e4d;
+}
+
+.button.clear {
+    background: #f56565;
+    grid-column: span 2;
+}
+
+.button.clear:hover {
+    background: #fc8181;
+}
+
+.button.equals {
+    background: #48bb78;
+    grid-row: span 2;
+}
+
+.button.equals:hover {
+    background: #68d391;
+}
+
+.button.zero {
+    grid-column: span 2;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .display {
+        font-size: 2rem;
+        padding: 15px;
+        min-height: 60px;
+    }
+    
+    .button {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
