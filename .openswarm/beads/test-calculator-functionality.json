@@ -1,0 +1,15 @@
+{
+  "id": "test-calculator-functionality",
+  "title": "Test calculator operations",
+  "description": "Test all calculator operations: basic arithmetic (addition, subtraction, multiplication, division), chaining operations, clear button, edge cases (division by zero, decimal numbers). Verify UI responsiveness.",
+  "dependencies": [
+    "style-calculator",
+    "implement-calculator-logic"
+  ],
+  "state": "pending-review",
+  "role": "wasp",
+  "assigned_to": "bright-wolf",
+  "pr_url": "https://github.com/SeanMcGrathCT/openswarm-e2e-test/pull/12",
+  "created_at": "2026-02-25T03:09:28.076759Z",
+  "updated_at": "2026-02-25T03:14:17.135731Z"
+}

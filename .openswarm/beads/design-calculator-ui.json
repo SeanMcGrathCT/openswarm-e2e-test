@@ -1,0 +1,14 @@
+{
+  "id": "design-calculator-ui",
+  "title": "Design calculator layout and structure",
+  "description": "Create HTML structure for calculator with display area and buttons (0-9, +, -, *, /, =, C). Plan CSS layout (grid or flexbox) for button arrangement.",
+  "dependencies": [],
+  "state": "pending-review",
+  "role": "scout",
+  "assigned_to": "calm-heron",
+  "pr_url": "https://github.com/SeanMcGrathCT/openswarm-e2e-test/pull/11",
+  "created_at": "2026-02-25T03:09:28.076759Z",
+  "updated_at": "2026-02-25T03:11:57.135865Z",
+  "chronicled": true,
+  "chronicled_at": "2026-02-25T03:15:00.000000Z"
+}

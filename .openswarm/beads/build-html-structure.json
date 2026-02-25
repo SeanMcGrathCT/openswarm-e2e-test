@@ -1,0 +1,12 @@
+{
+  "id": "build-html-structure",
+  "title": "Build HTML calculator markup",
+  "description": "Create index.html with calculator display div and button grid (number buttons 0-9, operator buttons +, -, *, /, equals, clear). Include semantic structure and proper button labeling.",
+  "dependencies": [
+    "design-calculator-ui"
+  ],
+  "state": "unresolved",
+  "role": "drone",
+  "created_at": "2026-02-25T03:09:28.076759Z",
+  "updated_at": "2026-02-25T03:09:28.077311Z"
+}
