@@ -8,27 +8,27 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display">0</div>
+        <div id="display" class="display">0</div>
         <div class="buttons">
-            <button class="operator">C</button>
-            <button class="operator">+/-</button>
-            <button class="operator">%</button>
-            <button class="operator">/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button class="zero">0</button>
-            <button>.</button>
-            <button class="operator">=</button>
+            <button id="clear" class="operator" data-value="C">C</button>
+            <button class="operator" data-value="+/-">+/-</button>
+            <button class="operator" data-value="%">%</button>
+            <button id="operator-divide" class="operator" data-value="/">&divide;</button>
+            <button id="digit-7" data-value="7">7</button>
+            <button id="digit-8" data-value="8">8</button>
+            <button id="digit-9" data-value="9">9</button>
+            <button id="operator-multiply" class="operator" data-value="*">&times;</button>
+            <button id="digit-4" data-value="4">4</button>
+            <button id="digit-5" data-value="5">5</button>
+            <button id="digit-6" data-value="6">6</button>
+            <button id="operator-subtract" class="operator" data-value="-">-</button>
+            <button id="digit-1" data-value="1">1</button>
+            <button id="digit-2" data-value="2">2</button>
+            <button id="digit-3" data-value="3">3</button>
+            <button id="operator-add" class="operator" data-value="+">+</button>
+            <button id="digit-0" class="zero" data-value="0">0</button>
+            <button id="decimal" data-value=".">.</button>
+            <button id="equals" class="operator" data-value="=">=</button>
         </div>
     </div>
     <script src="script.js"></script>
